@@ -575,6 +575,8 @@ class StandardProblem(Problem):
 
         # add every edge with some associated metadata
         for a, b in self.get_edges():
+            if a == b:
+                continue
             weight = self.get_weight(a, b)
             is_fixed = (a, b) in self.fixed_edges
             G.add_edge(names[a], names[b], weight=weight, is_fixed=is_fixed)

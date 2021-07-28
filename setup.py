@@ -18,9 +18,7 @@ requirements = [
     'tabulate~=0.8.7',
 ]
 
-setup_requirements = ['pytest-runner', ]
-
-test_requirements = ['pytest', ]
+setup_requirements = []
 
 setup(
     author="Robert Grant",
@@ -53,8 +51,6 @@ setup(
     name='tsplib95',
     packages=find_packages(include=['tsplib95']),
     setup_requires=setup_requirements,
-    test_suite='tests',
-    tests_require=test_requirements,
     url='https://github.com/rhgrant10/tsplib95',
     version='0.7.1',
     zip_safe=True,
